@@ -1,0 +1,12 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Title"/>
+        <EditText android:id="@+id/etAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Author"/>
+        <EditText android:id="@+id/etIsbn" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ISBN"/>
+        <EditText android:id="@+id/etBarcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Barcode"/>
+        <EditText android:id="@+id/etCover" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Cover URL"/>
+        <EditText android:id="@+id/etPhotoUri" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Photo URI"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Save"/>
+    </LinearLayout>
+</ScrollView>

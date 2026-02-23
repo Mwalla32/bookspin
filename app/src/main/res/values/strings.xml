@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bedtime Book Picker</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="skip_now">Skip for now</string>
+    <string name="pick_a_book">Pick a Book</string>
+    <string name="add_book">Add Book</string>
+</resources>

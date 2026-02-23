@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+    <TextView android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Press pick to choose" android:textSize="22sp"/>
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchAvoid" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Avoid recent picks" android:checked="true"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnPickAgain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pick Again"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnMarkRead" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mark Read Tonight"/>
+</LinearLayout>
