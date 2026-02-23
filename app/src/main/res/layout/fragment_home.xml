@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <TextView android:id="@+id/tvStats" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0 books"/>
+    <TextView android:id="@+id/tvLastPicked" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Last picked: none"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnPick" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/pick_a_book"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnAdd" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_book"/>
+</LinearLayout>

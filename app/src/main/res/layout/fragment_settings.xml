@@ -1,0 +1,12 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvAuthStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Not signed in"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnAuthAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign in"/>
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/switchLookup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enable ISBN lookup"/>
+        <TextView android:id="@+id/tvAvoidCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Avoid recent count: 5"/>
+        <SeekBar android:id="@+id/seekAvoid" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="10" android:progress="5"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnClearPicks" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Clear pick history"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnClearAll" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Clear all local data"/>
+    </LinearLayout>
+</ScrollView>

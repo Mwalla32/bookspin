@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment" android:name="com.bookspin.ui.login.LoginFragment" android:label="Login">
+        <action android:id="@+id/action_login_to_home" app:destination="@id/homeFragment" app:popUpTo="@id/loginFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:id="@+id/homeFragment" android:name="com.bookspin.ui.home.HomeFragment" android:label="Home">
+        <action android:id="@+id/action_home_to_add" app:destination="@id/addBookFragment"/>
+        <action android:id="@+id/action_home_to_picker" app:destination="@id/pickerFragment"/>
+        <action android:id="@+id/action_home_to_library" app:destination="@id/libraryFragment"/>
+        <action android:id="@+id/action_home_to_settings" app:destination="@id/settingsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/addBookFragment" android:name="com.bookspin.ui.add.AddBookFragment" android:label="Add Book">
+        <action android:id="@+id/action_add_to_confirm" app:destination="@id/confirmBookFragment"/>
+    </fragment>
+    <fragment android:id="@+id/confirmBookFragment" android:name="com.bookspin.ui.add.ConfirmBookFragment" android:label="Confirm Book"/>
+    <fragment android:id="@+id/libraryFragment" android:name="com.bookspin.ui.library.LibraryFragment" android:label="Library"/>
+    <fragment android:id="@+id/pickerFragment" android:name="com.bookspin.ui.picker.PickerFragment" android:label="Bedtime Picker"/>
+    <fragment android:id="@+id/settingsFragment" android:name="com.bookspin.ui.settings.SettingsFragment" android:label="Settings"/>
+</navigation>

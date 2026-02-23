@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="12dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/etIsbn" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter ISBN manually"/>
+    <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Title"/>
+    <EditText android:id="@+id/etAuthor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Author"/>
+    <TextView android:id="@+id/tvPhotoUri" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No photo selected"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnOpenCamera" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Scan Barcode"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnPickImage" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Photo or Gallery"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnContinue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="200dp"/>
+</LinearLayout>
